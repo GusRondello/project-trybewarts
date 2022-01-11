@@ -26,9 +26,7 @@ main {
   flex-wrap: wrap;
 }
 
-#frontend,
-#backend,
-#fullStack {
+#frontend, #backend, #fullStack {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
