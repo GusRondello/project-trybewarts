@@ -2,6 +2,14 @@
   background-color: rgb(50, 167, 145);
   display: flex;
 }
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
+}
+
+main {
+  display: flex;
+}
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
