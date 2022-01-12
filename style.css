@@ -29,7 +29,6 @@ main {
 .trybewarts-login input {
   width: 150px;
   height: 70px;
-
 }
 
 .trybewarts-header-logo {
@@ -50,7 +49,9 @@ main {
   width: 50%;
 }
 
-#container-email input, #container-lastname input, #container-name input {
+#container-email input,
+#container-lastname input,
+#container-name input {
   width: 90%;
 }
 
@@ -63,7 +64,9 @@ main {
   flex-wrap: wrap;
 }
 
-#frontend, #backend, #fullStack {
+#frontend,
+#backend,
+#fullStack {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
