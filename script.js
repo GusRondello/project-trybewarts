@@ -3,6 +3,8 @@ const senha = document.querySelector('#password');
 const email = document.querySelector('#email');
 const submit = document.getElementById('submit-btn');
 const aggre = document.getElementById('agreement');
+const comment = document.getElementById('comentario');
+const count = document.getElementById('counter');
 function login() {
   const emailTeste = email.value;
   const senhaTeste = senha.value;
@@ -22,5 +24,18 @@ function submitForm() {
     submit.disabled = true;
   }
 }
+
+function contador() {
+  const commentValue = comment.value.split('');
+  count.value = 500;
+  count.innerText = count.value;
+  if (commentValue.length < 500) {
+    count.innerText -= commentValue.length;
+    count.value = count.innerText;
+    return count.innerText;
+  }
+}
+
 buttonLogin.addEventListener('click', login);
 aggre.addEventListener('change', submitForm);
+comment.addEventListener('input', contador);
