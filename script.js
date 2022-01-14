@@ -3,7 +3,7 @@ const senha = document.querySelector('#password');
 const email = document.querySelector('#email');
 const submit = document.getElementById('submit-btn');
 const aggre = document.getElementById('agreement');
-const comment = document.getElementById('comentario');
+const comment = document.getElementById('textarea');
 const count = document.getElementById('counter');
 function login() {
   const emailTeste = email.value;
