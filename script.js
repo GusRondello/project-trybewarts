@@ -5,6 +5,14 @@ const submit = document.getElementById('submit-btn');
 const aggre = document.getElementById('agreement');
 const comment = document.getElementById('textarea');
 const count = document.getElementById('counter');
+/* Tentativa do 21:
+const inputName = document.getElementById('input-name').value;
+const inputLastName = document.getElementById('input-lastname').value;
+const inputEmail = document.getElementById('input-email').value;
+const casa = document.getElementById('house').value;
+const family = document.getElementById('label-family').value;
+const avaliation = document.getElementById('label-rate').value; */
+
 function login() {
   const emailTeste = email.value;
   const senhaTeste = senha.value;
@@ -36,6 +44,21 @@ function contador() {
   }
 }
 
+/* Tentativa do 21:
+function saveForm() {
+  const formObj = { Name: [inputName, inputLastName],
+    Email: inputEmail,
+    Casa: casa,
+    Família: family,
+    Avaliação: avaliation,
+    Observações: comment.value,
+  };
+  const p = document.createElement('p');
+  p.innerText = formObj;
+  document.form.appendChild(p);
+}
+
+submit.addEventListener('click', saveForm); */
 buttonLogin.addEventListener('click', login);
 aggre.addEventListener('change', submitForm);
 comment.addEventListener('input', contador);
